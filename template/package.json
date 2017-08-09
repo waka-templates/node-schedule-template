@@ -1,0 +1,16 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "main": "app.js",
+  "scripts": {
+    "i": "npm install --registry=https://registry.npm.taobao.org",
+    "start": "node app.js",
+    "deploy": "pm2 startOrGracefulReload ./pm2/production.json --env production"
+  },
+  "author": "{{ author }}",
+  "license": "ISC",
+  "dependencies": {
+    "node-schedule": "^1.2.3"
+  }
+}
