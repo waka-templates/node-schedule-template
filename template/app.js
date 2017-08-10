@@ -12,3 +12,9 @@ schedule.scheduleJob(rule, function () {
     //do your work here
     //...
 });
+
+{{#email}}
+//use email example
+let Mail = require('./mail/index');
+Mail.send('xxx@example.com', '_subject', '<h1>Hello world</h1>');
+{{/email}}

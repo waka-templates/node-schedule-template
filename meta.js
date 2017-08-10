@@ -14,7 +14,14 @@ module.exports = {
             type: 'string',
             message: 'author',
             required: true
+        },
+        email: {
+            type: 'confirm',
+            message: 'need send email?'
         }
+    },
+    filters: {
+        'mail/*':'email'
     },
     completeMessage: "init project successfully. \n read more in README.md"
 };

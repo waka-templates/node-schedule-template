@@ -11,6 +11,9 @@
   "author": "{{ author }}",
   "license": "ISC",
   "dependencies": {
+    {{#email}}
+    "nodemailer": "^4.0.1",
+    {{/email}}
     "node-schedule": "^1.2.3"
   }
 }
